@@ -22,6 +22,29 @@ const rainbowBlocks: string[] = [
   "minecraft:purple_concrete"
 ];
 
+/**
+ * @brief Retrieves the item currently held in the player's main hand.
+ * 
+ * This function accesses the player's inventory and returns the item in their selected slot.
+ * If the inventory or selected slot is invalid, it returns `null` or `undefined`.
+ * 
+ * @param player The player whose main hand item is being retrieved.
+ * 
+ * @return {ItemStack | undefined | null} 
+ * - `ItemStack`: The item currently held in the player's main hand.
+ * - `undefined`: If the selected slot index is empty.
+ * - `null`: If the player inventory or container is inaccessible.
+ * 
+ * @note Ensure the `player` parameter is a valid player entity with an accessible inventory.
+ * 
+ * @example
+ * const item = getPlayerMainHandItem(player);
+ * if (item) {
+ *     console.log(`Player is holding: ${item.typeId}`);
+ * } else {
+ *     console.log("Player is not holding any item.");
+ * }
+ */
 function getPlayerMainHandItem(player: Player): ItemStack | undefined | null {
   const inventory: EntityInventoryComponent = player.getComponent(EntityComponentTypes.Inventory) as EntityInventoryComponent;
   if (!inventory || !inventory.container) return null;
