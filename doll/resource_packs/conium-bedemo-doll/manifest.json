@@ -1,0 +1,28 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "§lConium Sample - Doll",
+    "description": "A basic Hello World example of developing Minecraft entities using data-driven APIs and a build process.",
+    "uuid": "82010ac4-996f-4d64-b747-4064ae2bc9d2",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 16, 0],
+    "pack_scope": "world"
+  },
+  "modules": [
+    {
+      "description": "The add-on for the Conium Bedrock Edition example.",
+      "uuid": "a6663264-cdab-48f3-8bae-d46718175444",
+      "version": [1, 0, 0],
+      "type": "resources"
+    }
+  ],
+  "metadata": {
+    "authors": ["Fairydewstz"]
+  },
+  "dependencies": [
+    {
+      "version": [1, 0, 0],
+      "uuid": "124438a8-ad1f-456d-8b2a-3816ed58868d"
+    }
+  ]
+}
