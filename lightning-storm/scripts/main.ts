@@ -6,7 +6,7 @@ import {
   Entity,
   ItemStack,
   EntityInventoryComponent,
-  EntityComponentTypes
+  EntityComponentTypes,
 } from "@minecraft/server";
 
 
